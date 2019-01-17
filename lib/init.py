@@ -67,7 +67,7 @@ def has_dash_conf():
     # if not, print a message stating that Dash Core must be installed and
     # configured, including JSONRPC access in dash.conf
     try:
-        f = io.open(config.dash_conf)
+        f = io.open(config.scope_conf)
         valid_dash_conf = True
     except IOError as e:
         print(e)

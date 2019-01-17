@@ -12,7 +12,8 @@ from peewee import PeeweeException  # , OperationalError, IntegrityError
 from dashd import DashDaemon
 import dashlib
 from decimal import Decimal
-dashd = DashDaemon.from_dash_conf(config.dash_conf)
+print("CONFIG: ", config.scope_conf)
+dashd = DashDaemon.from_dash_conf(config.scope_conf)
 import misc
 # ==============================================================================
 # do stuff here

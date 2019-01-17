@@ -81,7 +81,7 @@ def proposal():
 def test_proposal_is_valid(proposal):
     from dashd import DashDaemon
     import dashlib
-    dashd = DashDaemon.from_dash_conf(config.dash_conf)
+    dashd = DashDaemon.from_dash_conf(config.scope_conf)
 
     orig = Proposal(**proposal.get_dict())  # make a copy
 
@@ -281,7 +281,7 @@ def test_proposal_is_expired(proposal):
 # deterministic ordering
 def test_approved_and_ranked(go_list_proposals):
     from dashd import DashDaemon
-    dashd = DashDaemon.from_dash_conf(config.dash_conf)
+    dashd = DashDaemon.from_dash_conf(config.scope_conf)
 
     for item in go_list_proposals:
         (go, subobj) = GovernanceObject.import_gobject_from_dashd(dashd, item)

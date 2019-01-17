@@ -13,7 +13,7 @@ from dash_config import DashConfig
 
 
 def test_dashd():
-    config_text = DashConfig.slurp_config_file(config.dash_conf)
+    config_text = DashConfig.slurp_config_file(config.scope_conf)
     network = 'mainnet'
     is_testnet = False
     genesis_hash = u'00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6'

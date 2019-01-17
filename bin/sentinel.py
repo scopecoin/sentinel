@@ -121,7 +121,7 @@ def is_dashd_port_open(dashd):
 
 
 def main():
-    dashd = DashDaemon.from_dash_conf(config.dash_conf)
+    dashd = DashDaemon.from_dash_conf(config.scope_conf)
     options = process_args()
 
     # check dashd connectivity

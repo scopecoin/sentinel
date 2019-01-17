@@ -86,7 +86,7 @@ def get_db_conn():
     return db
 
 
-dash_conf = get_dash_conf()
+scope_conf = get_dash_conf()
 network = get_network()
 rpc_host = get_rpchost()
 db = get_db_conn()

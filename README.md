@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dashpay/sentinel.svg?branch=master)](https://travis-ci.org/dashpay/sentinel)
 
-> An automated governance helper for Dash Masternodes.
+> An automated governance helper for XSCP Masternodes.
 
 Sentinel is an autonomous agent for persisting, processing and automating Dash governance objects and tasks. It is a Python application which runs alongside the DashCore instance on each Dash Masternode.
 

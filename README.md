@@ -1,7 +1,5 @@
 # Scope Coin Sentinel
 
-[![Build Status](https://travis-ci.org/Scopepay/sentinel.svg?branch=master)](https://travis-ci.org/Scopepay/sentinel)
-
 > An automated governance helper for XSCP Masternodes.
 
 Sentinel is an autonomous agent for persisting, processing and automating Scope governance objects and tasks. It is a Python application which runs alongside the ScopeCore instance on each Scope Masternode.

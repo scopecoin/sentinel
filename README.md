@@ -1,10 +1,10 @@
 # Scope Coin Sentinel
 
-[![Build Status](https://travis-ci.org/dashpay/sentinel.svg?branch=master)](https://travis-ci.org/dashpay/sentinel)
+[![Build Status](https://travis-ci.org/Scopepay/sentinel.svg?branch=master)](https://travis-ci.org/Scopepay/sentinel)
 
 > An automated governance helper for XSCP Masternodes.
 
-Sentinel is an autonomous agent for persisting, processing and automating Dash governance objects and tasks. It is a Python application which runs alongside the DashCore instance on each Dash Masternode.
+Sentinel is an autonomous agent for persisting, processing and automating Scope governance objects and tasks. It is a Python application which runs alongside the ScopeCore instance on each Scope Masternode.
 
 ## Table of Contents
 - [Install](#install)
@@ -31,15 +31,15 @@ Update system packages and ensure virtualenv is installed:
     $ sudo apt-get update
     $ sudo apt-get -y install python-virtualenv
 
-Make sure the local DashCore daemon running is at least version 12.1 (120100)
+Make sure the local ScopeCore daemon running is at least version 0.1.2.2
 
-    $ dash-cli getinfo | grep version
+    $ scope-cli getinfo | grep version
 
 ### Install Sentinel
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/dashpay/sentinel.git && cd sentinel
+    $ git clone https://github.com/scopecoin/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -63,13 +63,13 @@ Test the config by running tests:
 
     $ ./venv/bin/py.test ./test
 
-With all tests passing and crontab setup, Sentinel will stay in sync with dashd and the installation is complete
+With all tests passing and crontab setup, Sentinel will stay in sync with Scoped and the installation is complete
 
 ## Configuration
 
-An alternative (non-default) path to the `dash.conf` file can be specified in `sentinel.conf`:
+An alternative (non-default) path to the `scope.conf` file can be specified in `sentinel.conf`:
 
-    dash_conf=/path/to/dash.conf
+    scope_conf=/path/to/scope.conf
 
 ## Troubleshooting
 
@@ -79,26 +79,8 @@ To view debug output, set the `SENTINEL_DEBUG` environment variable to anything 
 
 ## Maintainer
 
-[@nmarley](https://github.com/nmarley)
-
-## Contributing
-
-Please follow the [DashCore guidelines for contributing](https://github.com/dashpay/dash/blob/master/CONTRIBUTING.md).
-
-Specifically:
-
-* [Contributor Workflow](https://github.com/dashpay/dash/blob/master/CONTRIBUTING.md#contributor-workflow)
-
-    To contribute a patch, the workflow is as follows:
-
-    * Fork repository
-    * Create topic branch
-    * Commit patches
-
-    In general commits should be atomic and diffs should be easy to read. For this reason do not mix any formatting fixes or code moves with actual code changes.
-
-    Commit messages should be verbose by default, consisting of a short subject line (50 chars max), a blank line and detailed explanatory text as separate paragraph(s); unless the title alone is self-explanatory (like "Corrected typo in main.cpp") then a single title line is sufficient. Commit messages should be helpful to people reading your code in the future, so explain the reasoning for your decisions. Further explanation [here](http://chris.beams.io/posts/git-commit/).
+[@0xA01](https://github.com/0xA01)
 
 ## License
 
-Released under the MIT license, under the same terms as DashCore itself. See [LICENSE](LICENSE) for more info.
+Released under the MIT license, under the same terms as ScopeCore itself. See [LICENSE](LICENSE) for more info.

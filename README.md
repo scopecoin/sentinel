@@ -13,7 +13,6 @@ Sentinel is an autonomous agent for persisting, processing and automating Scope 
 - [Configuration](#configuration)
 - [Troubleshooting](#troubleshooting)
 - [Maintainer](#maintainer)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Install
